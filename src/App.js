@@ -43,6 +43,7 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandller}/>
     } 
   return (
+    <Router>
      <div style={{height: '100%'}}>
 
     <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
@@ -51,17 +52,16 @@ class App extends Component {
   
 
     <main style={{marginTop:'64px'}}>
-      <Router>
+      
      
        <Switch>
-       <Route exact={true} path="/login" component={Login}/>
-      <Route exact={true} path="/messages" component={Messages}/>
-      <Route exact={true} path="/paycheck" component={PayCheck}/>
-      <Route exact={true} path="/" component={Home}/>
+        <Route exact={true} path="/login" component={Login}/>
+        <Route exact={true} path="/messeges" component={Messages}/>
+        <Route exact={true} path="/paycheck" component={PayCheck}/>
+        <Route exact={true} path="/" component={Home}/>
 
       
       </Switch>
-      </Router>
 
 
 
@@ -69,7 +69,7 @@ class App extends Component {
     </main>
     </div>
     
-      
+    </Router>
   );
   }
 }

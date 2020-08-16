@@ -16,7 +16,7 @@ const Toolbar = (props) => (
       </div>
       <div className="spacer" />
       <div className="toolbar_navigation_items">
-        <Router>
+        {/* <Router> */}
           <ul>
             <li>Home</li>
 
@@ -26,7 +26,7 @@ const Toolbar = (props) => (
 
             <li className="d-none">Messages</li>
           </ul>
-        </Router>
+        {/* </Router> */}
       </div>
     </nav>
   </header>
